@@ -1,0 +1,6 @@
+black
+codespell
+coverage
+mypy
+pylint
+python-dateutil
