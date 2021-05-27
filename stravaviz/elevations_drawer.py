@@ -69,8 +69,8 @@ class ElevationsDrawer(TracksDrawer):
         line = []
         for i, elevation in enumerate(elevations):
             elevation_scaling = self.max_ele - self.min_ele
-            e = szx - (((elevation - self.min_ele) / elevation_scaling) * szx) + ofx
-            line.append((szy / len(elevations) * i + ofy, e))
+            e = szy - (((elevation - self.min_ele) / elevation_scaling) * szy) + ofy
+            line.append((szx / len(elevations) * i + ofx, e))
         polyline = dr.polyline(
             points=line,
             stroke="#000000",
